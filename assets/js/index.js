@@ -33,7 +33,6 @@ axios.get('https://dev4humans.com.mx/api/Clases/ventas_peliculas')
                         "#69F5EB",
                         "#6984F5",
                         "#B469F5",
-                        
                     ],
                 }],
 
@@ -51,7 +50,7 @@ axios.get('https://dev4humans.com.mx/api/Clases/ventas_peliculas')
         labels.forEach((label, index) => {
             console.log(index);
             const tr = document.createElement("tr");
-            
+
             tr.innerHTML = `
                 <td>${index + 1}</td>
                 <td>${label}</td>
