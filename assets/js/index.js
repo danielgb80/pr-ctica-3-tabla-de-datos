@@ -1,5 +1,4 @@
 console.log("Entro a index.js");
-//  EDONPINT: https://dev4humans.com.mx/api/Clases/ventas_libros
 const tbody = document.getElementById('tbody');
 axios.get('https://dev4humans.com.mx/api/Clases/ventas_peliculas')
     .then(datosApi => {
