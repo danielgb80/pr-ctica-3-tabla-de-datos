@@ -14,7 +14,7 @@ axios.get('https://dev4humans.com.mx/api/Clases/ventas_peliculas')
             data: {
                 labels: labels,
                 datasets: [{
-                    label: 'Promedio Ventas Diarias',
+                    label: 'Número de Ventas',
                     data: data,
                     borderWidth: 1,
                     borderColor: [
