@@ -9,7 +9,7 @@ axios.get('https://dev4humans.com.mx/api/Clases/ventas_peliculas')
         const labels = datosApi.data.data.labels;
         const data = datosApi.data.data.data;
 
-        // Creacion de graficas
+        // Gráfica
         new Chart(ctx, {
             type: 'bar',
             data: {
@@ -27,12 +27,12 @@ axios.get('https://dev4humans.com.mx/api/Clases/ventas_peliculas')
                         "#F5933D"
                     ],
                     backgroundColor: [
+                        "#F5933D",
                         "#EDF569",
                         "#69F581",
                         "#69F5EB",
                         "#6984F5",
                         "#B469F5",
-                        "#F5933D"
                         
                     ],
                 }],
@@ -46,14 +46,12 @@ axios.get('https://dev4humans.com.mx/api/Clases/ventas_peliculas')
                 }
             }
         });
-        // Cracion de datos de tabla
+        // Datos de tabla
         tbody.innerHTML = "";
         labels.forEach((label, index) => {
             console.log(index);
             const tr = document.createElement("tr");
-            if (data[index] > 50) {
-                tr.classList.add("fw-bold");
-            }
+            
             tr.innerHTML = `
                 <td>${index + 1}</td>
                 <td>${label}</td>
