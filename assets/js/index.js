@@ -19,18 +19,21 @@ axios.get('https://dev4humans.com.mx/api/Clases/ventas_peliculas')
                     data: data,
                     borderWidth: 1,
                     borderColor: [
-                        "#3677D4",
-                        "#5FD436",
-                        "#D436C5",
-                        "#D43636",
-                        "#D1D436"
+                        "#EDF569",
+                        "#69F581",
+                        "#69F5EB",
+                        "#6984F5",
+                        "#B469F5",
+                        "#F5933D"
                     ],
                     backgroundColor: [
-                        "#3677D4",
-                        "#5FD436",
-                        "#D436C5",
-                        "#D43636",
-                        "#D1D436"
+                        "#EDF569",
+                        "#69F581",
+                        "#69F5EB",
+                        "#6984F5",
+                        "#B469F5",
+                        "#F5933D"
+                        
                     ],
                 }],
 
@@ -49,7 +52,6 @@ axios.get('https://dev4humans.com.mx/api/Clases/ventas_peliculas')
             console.log(index);
             const tr = document.createElement("tr");
             if (data[index] > 50) {
-                tr.classList.add("table-danger");
                 tr.classList.add("fw-bold");
             }
             tr.innerHTML = `
